@@ -23,11 +23,11 @@ function retryRequest(func, nrOfRetries) {
         })
         .catch(() => {
           attemptNumber++;
-          attempt(attemptNumber);
+          attempt();
         });
     }
 
-    attempt(attemptNumber);
+    attempt();
   });
 }
 
